@@ -186,10 +186,3 @@ Os resultados quantitativos e qualitativos são salvos automaticamente em:
 - **Difusão:** manteve comportamento estável e produziu imagens com maior coerência local, mas com custo computacional elevado e resultados quantitativos inferiores no cenário avaliado.
 
 **Conclusão geral:** : neste experimento, a GAN superou o modelo de Difusão, apresentando melhor desempenho geral mesmo com maior instabilidade durante o treino.
-
-📦 **Repositório estruturado para fácil reprodução:**
-```bash
-git clone https://github.com/usuario/Comparacao-GAN-vs-Difusao.git
-cd Comparacao-GAN-vs-Difusao
-pip install -r requirements.txt
-```
