@@ -132,7 +132,6 @@ Os resultados quantitativos e qualitativos são salvos automaticamente em:
 - **Difusão:** manteve comportamento estável e produziu imagens com maior coerência local, mas com custo computacional elevado e resultados quantitativos inferiores no cenário avaliado. Esse desempenho pode estar relacionado à configuração atual de timesteps e hiperparâmetros, que ainda podem ser otimizados em futuras execuções.
 
 **Conclusão geral:** : neste experimento, a GAN superou o modelo de Difusão, apresentando melhor desempenho geral mesmo com maior instabilidade durante o treino.
-Como próximo passo, recomenda-se testar diferentes valores de timesteps e ajustar parâmetros do processo de difusão para explorar melhor seu potencial, buscando um equilíbrio entre qualidade visual, estabilidade e custo computacional.
 
 📦 **Repositório estruturado para fácil reprodução:**
 ```bash
