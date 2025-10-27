@@ -88,10 +88,14 @@ Os resultados quantitativos e qualitativos são salvos automaticamente em:
 ### 1. Evolução Visual
 
 #### Difusão
-<img src="./samples/diffusion_progress.gif" alt="Diffusion Progress" width="420" />
+<p>
+  <img src="./samples/diffusion_progress.gif" alt="Diffusion Progress" width="224" />
+</p>
 
 #### GAN
-<img src="./samples/gan_progress.gif" alt="GAN Progress" width="420" />
+<p>
+  <img src="./samples/gan_progress.gif" alt="GAN Progress" width="224" />
+</p>
 
 
 
