@@ -112,10 +112,8 @@ Os resultados quantitativos e qualitativos são salvos automaticamente em:
 ### 3. Métricas Finais
 | Modelo | FID ↓ | IS ↑ (média) | IS Std |
 |---------|--------|--------------|---------|
-| GAN | **78.4** | 1.62 | 0.08 |
-| Difusão | **46.9** | 1.91 | 0.05 |
-
-> **Observação:** O modelo de difusão atingiu melhor FID, indicando maior fidelidade visual, enquanto a GAN mostrou maior variação entre amostras.
+| Difusao | **78.4** | 1.62 | 0.08 |
+| GAN | **46.9** | 1.91 | 0.05 |
 
 ---
 
