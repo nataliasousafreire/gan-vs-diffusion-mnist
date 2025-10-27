@@ -132,7 +132,7 @@ Os resultados quantitativos e qualitativos são salvos automaticamente em:
 ## Conclusão
 
 - **GAN:** Apresentou rápido aprendizado e capacidade de gerar amostras visualmente diversas logo nas primeiras épocas. Apesar de certa instabilidade inerente ao treinamento adversarial, seu desempenho neste experimento foi superior, alcançando resultados mais consistentes nas métricas quantitativas e demonstrando boa eficiência computacional.
-- **Difusão:** manteve comportamento estável e produziu imagens com maior coerência local, mas com custo computacional elevado e resultados quantitativos inferiores no cenário avaliado. Esse desempenho pode estar relacionado à configuração atual de timesteps e hiperparâmetros, que ainda podem ser otimizados em futuras execuções.
+- **Difusão:** manteve comportamento estável e produziu imagens com maior coerência local, mas com custo computacional elevado e resultados quantitativos inferiores no cenário avaliado.
 
 **Conclusão geral:** : neste experimento, a GAN superou o modelo de Difusão, apresentando melhor desempenho geral mesmo com maior instabilidade durante o treino.
 
