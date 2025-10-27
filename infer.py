@@ -18,7 +18,7 @@ def main():
     p.add_argument("--n", type=int, default=64,)
     p.add_argument("--nz", type=int, default=100)
     p.add_argument("--image-size", type=int, default=64)
-    p.add_argument("--timesteps", type=int, default=200)
+    p.add_argument("--timesteps", type=int, default=1000)
     p.add_argument("--out", type=str, default="samples/infer_side_by_side.png")
     p.add_argument("--device", type=str, default=None)
     p.add_argument("--seed", type=int, default=None)
