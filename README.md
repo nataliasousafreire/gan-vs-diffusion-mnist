@@ -33,20 +33,26 @@ Ambos os modelos foram implementados em **PyTorch**, com uso das seguintes bibli
 
 ## Estrutura do Projeto
 ```
-├── models/                # Arquiteturas (GAN, U-Net)
-├── utils/                 # Funções auxiliares (gravação, loaders, métricas)
-├── callbacks/             # EarlyStop e redução de LR automática
-├── samples/               # Imagens e GIFs gerados
+├── models.py                # Arquiteturas (GAN e U-Net para Difusão)
+├── utils.py                 # Funções auxiliares (gravação, loaders, métricas)
+├── callbacks.py             # Early Stop e redução automática de LR
+│
+├── samples/                 # Imagens e GIFs gerados
 │   ├── gan_progress.gif
 │   └── diffusion_progress.gif
-├── reports/               # Relatórios e gráficos de resultados
+│
+├── reports/                 # Relatórios, métricas e resultados quantitativos
 │   ├── fid_comparison.png
 │   ├── is_comparison.png
 │   ├── loss_comparison.png
-├── train_gan.py           # Script de treino da GAN
-├── train_diffusion.py     # Script de treino do modelo de difusão
-├── infer.py               # Geração de amostras lado a lado (GAN e Difusão)
-└── README.md              # Este arquivo
+│   ├── gan_training_log.csv
+│   ├── diffusion_training_log.csv
+│
+├── train_gan.py             # Script de treinamento da GAN
+├── train_diffusion.py       # Script de treinamento do modelo de Difusão
+├── infer.py                 # Geração de amostras lado a lado (GAN vs Difusão)
+└── README.md                # Documentação 
+            
 ```
 
 ---
@@ -65,7 +71,7 @@ python train_diffusion.py --epochs 100 --batch-size 128 --ema --early-stop --tim
 ### 2. Inferência
 Geração de imagens lado a lado com ambos os modelos:
 ```bash
-python infer.py --n 64 --out samples/infer_side_by_side.png
+python infer.py 
 ```
 
 ### 3. Resultados
@@ -81,19 +87,25 @@ Os resultados quantitativos e qualitativos são salvos automaticamente em:
 
 ### 1. Evolução Visual
 #### GAN
+
 ![GAN Progress](samples/gan_progress.gif)
 
+
 #### Difusão
+
 ![Diffusion Progress](samples/diffusion_progress.gif)
 
 ### 2. Gráficos de Desempenho
 - **FID (Fréchet Inception Distance)** — quanto menor, melhor qualidade:
+  
   ![FID Comparison](reports/fid_comparison.png)
 
 - **Inception Score (IS)** — quanto maior, maior diversidade:
+  
   ![IS Comparison](reports/is_comparison.png)
 
 - **Loss / FID Over Time:**
+  
   ![Loss Comparison](reports/loss_comparison.png)
 
 ### 3. Métricas Finais
