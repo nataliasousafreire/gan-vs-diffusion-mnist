@@ -86,14 +86,15 @@ Os resultados quantitativos e qualitativos são salvos automaticamente em:
 ## Resultados e Análises
 
 ### 1. Evolução Visual
+
+#### Difusão
+
+![Diffusion Progress](samples/diffusion_progress.gif)
 #### GAN
 
 ![GAN Progress](samples/gan_progress.gif)
 
 
-#### Difusão
-
-![Diffusion Progress](samples/diffusion_progress.gif)
 
 
 ### 2. Gráficos de Desempenho
