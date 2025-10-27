@@ -121,14 +121,17 @@ Os resultados quantitativos e qualitativos são salvos automaticamente em:
 - **FID (Fréchet Inception Distance)** — quanto menor, melhor qualidade:
   
   ![FID Comparison](reports/fid_comparison.png)
+  
 
 - **Inception Score (IS)** — quanto maior, maior diversidade:
   
   ![IS Comparison](reports/is_comparison.png)
+  
 
 - **Loss / FID Over Time:**
   
   ![Loss Comparison](reports/loss_comparison.png)
+  
 
 ### 3. Métricas Finais
 | Modelo | FID ↓ | IS ↑ (média) | IS Std |
