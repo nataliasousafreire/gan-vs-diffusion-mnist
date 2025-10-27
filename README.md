@@ -95,6 +95,7 @@ Os resultados quantitativos e qualitativos são salvos automaticamente em:
 
 ![Diffusion Progress](samples/diffusion_progress.gif)
 
+
 ### 2. Gráficos de Desempenho
 - **FID (Fréchet Inception Distance)** — quanto menor, melhor qualidade:
   
