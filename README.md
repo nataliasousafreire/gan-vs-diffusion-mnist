@@ -130,10 +130,14 @@ Os resultados quantitativos e qualitativos são salvos automaticamente em:
 
 ### 1. Evolução Visual
 
+
+
 #### Difusão
 <p>
   <img src="./samples/diffusion_progress.gif" alt="Diffusion Progress" width="224" />
 </p>
+
+
 
 #### GAN
 <p>
@@ -143,9 +147,13 @@ Os resultados quantitativos e qualitativos são salvos automaticamente em:
 
 
 ### 2. Gráficos de Desempenho
+
+
 - **FID (Fréchet Inception Distance)** — quanto menor, melhor qualidade:
-  
+
+
   ![FID Comparison](reports/fid_comparison.png)
+
   
 
 - **Inception Score (IS)** — quanto maior, maior diversidade:
