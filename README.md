@@ -88,9 +88,34 @@ python train_diffusion.py --epochs 100 --batch-size 128 --ema --early-stop --tim
 
 ### 2. Inferência
 Geração de imagens lado a lado com ambos os modelos:
+Ele pode ser executado de duas formas:
+
+#### 1. **Modo padrão (recomendado)**
+Se você não especificar nenhum caminho de modelo, o script automaticamente carrega os **melhores checkpoints** localizados na pasta `/checkpoints/`:
 ```bash
-python infer.py 
+python infer.py
 ```
+Nesse modo, serão utilizados:
+```
+GAN → checkpoints/best_GAN_G.pt
+Difusão → checkpoints/best_DIFF.pt
+```
+
+As imagens geradas serão salvas em:
+```
+/samples/infer_side_by_side.png
+```
+
+#### 2. **Modo manual (opcional)**
+Você também pode informar explicitamente os modelos a serem usados:
+```bash
+python infer.py   --gan-model checkpoints/GAN_G_epoch_050.pt   --diff-model checkpoints/DIFF_epoch_080.pt   --n 64   --out samples/custom_infer.png
+```
+Parâmetros opcionais:
+- `--gan-model`: caminho para o gerador da GAN.  
+- `--diff-model`: caminho para o modelo de difusão.  
+- `--n`: número de imagens a serem geradas (padrão: 64).  
+- `--out`: caminho de saída da imagem comparativa.
 
 ### 3. Resultados
 Os resultados quantitativos e qualitativos são salvos automaticamente em:
