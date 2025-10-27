@@ -55,6 +55,24 @@ Ambos os modelos foram implementados em **PyTorch**, com uso das seguintes bibli
             
 ```
 
+ **Observação importante sobre os modelos treinados:**  
+A pasta `checkpoints/`, que contém os **pesos finais das redes (modelos treinados)**, não está incluída no repositório por motivos de tamanho(boas práticas de versionamento desaconselham armazenar arquivos grandes diretamente no Git).
+Para executar o script `infer.py` (geração de amostras comparativas), é necessário baixar os modelos pré-treinados e colocá-los manualmente dentro da pasta `checkpoints/`.
+
+**Download dos modelos:**  
+[Acesse aqui o diretório no Google Drive](https://drive.google.com/drive/folders/1tXcDfEV6eiGvZHYlHOFJWZ1X0UADNWia?usp=sharing)  
+Após o download, extraia os arquivos e coloque-os na pasta local:
+```
+/checkpoints/
+├── best_GAN_G.pt
+├── best_GAN_D.pt
+└── best_DIFF.pt
+ ```
+Somente após isso, rode o comando:
+```bash
+python infer.py
+```
+
 ---
 
 ## Execução
